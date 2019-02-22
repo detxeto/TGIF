@@ -60,7 +60,6 @@ var createATable = document.getElementById("myBeautyTable");
 
 //variables generals de les funcions:
 //var membersWeNeed = data.results[0].members;
-//crida de funcions:
 
 
 //anomenem els listeners
