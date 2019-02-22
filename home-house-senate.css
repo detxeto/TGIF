@@ -1,0 +1,134 @@
+/*home*/
+.accordion {
+    background-color: #eee;
+    color: darkblue;
+    cursor: pointer;
+
+    width: 140px;
+    height: 40px;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    text-align: center;
+
+}
+
+.img-size {
+    width: 100px;
+    height: 100px;
+
+}
+
+/*barra menu*/
+.re-size {
+    width: 110px;
+
+
+
+}
+
+/*senate*/
+
+.senate-text {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.filter_party {
+
+    width: 70%;
+}
+
+.filter_state {
+    width: 25%;
+
+}
+
+.state_filter_box {}
+
+.sAttTable {
+
+    width: 45%;
+    height: 45%;
+}
+
+.paragraf {
+
+    width: 60%;
+}
+
+.textHeader {
+    height: 15%;
+    width: 100%;
+}
+
+.paragrafTwo {
+    width: 100%;
+    height: 15%;
+
+}
+
+.boxSize {
+    width: 80px;
+    height: 60px;
+}
+
+
+
+/*footer*/
+
+.footer{
+   
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+    height: 50px;
+   background-color:#343a40 ;
+   color: white;
+   text-align: center;
+}
+    
+
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #343a40;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.footerHome{
+    
+       width: 100%;
+    height: 55px;
+   background-color:#343a40 ;
+    color: white;
+    text-align: center;
+    vertical-align:middle;
+}
+
+.bottomText{
+    
+   padding-top: 15px;
+    background-color: #343a40;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <table id="house-data">
+        <title>House</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <link rel="stylesheet" href="home-house-senate.css">
+    </table>
+</head>
+
+<body>
+    <header class="container-fluid">
+        <span class="row">
+            <section class="col-xs-6 col-sm-7 col-md-8 d-flex flex-row">
+                <a href="#"><img src="images/logobueno.png" alt="TGIF logo"></a>
+
+            </section>
+
+            <aside class="col-xs-6 col-sm-5 col-md-4 d-flex flex-row-reverse">
+
+                <a href="mailto:info@tgif.net"><img class="d-flex flex-row-reverse img-size" src="images/envelope.png" alt="envelope-mail"></a>
+            </aside>
+        </span>
+
+
+    </header>
+    <main>
+        <div class="container-fluid p-3 mb-2 bg-dark text-white ">
+            <nav class="navbar navbar-inverse">
+                <ul class="nav navbar-nav d-flex flex-row  ">
+                    <li class="active re-size"><a href="home.html">Home</a></li>
+                    <li class="dropdown re-size ">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Congress 113</a>
+
+                        <ul class="dropdown-menu  boxSize">
+                            <li><a href="senate-data.html">Senate</a></li>
+                            <li><a href="#">House</a></li>
+
+
+                        </ul>
+                    </li>
+                    <li class="dropdown re-size">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">&nbsp;Attendance</a>
+                        <ul class="dropdown-menu boxSize ">
+                            <li><a href="senate-attendance.html">Senate</a></li>
+                            <li><a href="house-attendance.html">House</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown re-size ">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Party Loyalty</a>
+                        <ul class="dropdown-menu  boxSize">
+                            <li><a href="senate-party-loyalty.html">Senate</a></li>
+                            <li><a href="house-party-loyalty.html">House</a></li>
+                        </ul>
+                    </li>
+
+
+
+
+                </ul>
+
+            </nav>
+        </div>
+
+        <!--Table container-->
+        <div class="senate-text container">
+            <h2>Congressmen</h2>
+            <p>The major power of the House is to pass federal legislation that affects the entire country, although its bills must also be passed by the Senate and further agreed to by the U.S. President before becoming law (unless both the House and Senate re-pass the legislation with a two-thirds majority in each chamber). The House has some exclusive powers: the power to initiate revenue bills, to impeach officials (impeached officials are subsequently tried in the Senate), and to elect the U.S. President in case there is no majority in the Electoral College.</p>
+            <p>Each U.S. state is represented in the House in proportion to its population as measured in the census, but every state is entitled to at least one representative. </p>
+
+            <div>
+                <div class="container d-inline-flex p-2 flex-row filter_party">
+
+                    <label>Filter by Party:</label>
+                    <input type="checkbox" id="myCboxD" value="D"> <label>Democrat</label>
+                    <input type="checkbox" id="myCboxR" value="R"> <label>Republican</label>
+                    <input type="checkbox" id="myCboxI" value="I"> <label>Independent</label>
+
+                </div>
+                <div class="container d-flex d-inline-flex p-2 flex-row-reverse filter_state">
+                    <form id="stateFilter" action="" method="">
+                        <label>Filer by State:</label>
+                        <select class="state_filter_box" id="stateFilterMenu">
+                            <option value="All">--All--</option>
+
+
+                        </select>
+                    </form>
+                </div>
+            </div>
+
+
+
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Members</th>
+                        <th>Party</th>
+                        <th>State</th>
+                        <th>Seniority</th>
+                        <th>Votes Pct</th>
+
+                    </tr>
+                </thead>
+                <tbody id="myBeautyTable" id="myBeautyTable"  onload="myFunction()" style="margin:0;">
+<div id="loader"></div>
+                </tbody>
+            </table>
+
+        </div>
+
+    </main>
+    <footer class="footer">
+
+        <p class="d-flex justify-content-center p-3 mb-2 bg-dark text-white"> &copy; 2019 TGIF | All Rights Reserved</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<!--    <script type="text/javascript" src="pro-congress-113-house.js"></script>-->
+    <script src="prueba2.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
